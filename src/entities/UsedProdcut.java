@@ -23,8 +23,9 @@ public class UsedProdcut extends Product {
 	}
 
 	public String priceTag() {
-		return super.getName() + " (used) $" + String.format("%.2f", super.getPrice()) + " Manufacture date: "
-				+ sdf.format(manufactureDate);
+		return super.getName() + " (used) $" + String.format("%.2f", super.getPrice()) + " (Manufacture date: "
+				+ sdf.format(manufactureDate)
+				+ ")";
 
 	}
 

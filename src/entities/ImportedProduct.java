@@ -26,7 +26,8 @@ public class ImportedProduct extends Product {
 	}
 
 	public final String priceTag() {
-		return super.getName() + " $" + String.format("%.2f", totalPrice()) + " Customs fee: $ "
-				+ String.format("%.2f", customsFee);
+		return super.getName() + " $" + String.format("%.2f", totalPrice()) + " (Customs fee: $ "
+				+ String.format("%.2f", customsFee)
+				+ ")";
 	}
 }
